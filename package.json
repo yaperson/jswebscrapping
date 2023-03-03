@@ -1,0 +1,14 @@
+{
+  "name": "jswebscrap",
+  "version": "1.0.0",
+  "description": "test js web scrapping ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "yanis legrand",
+  "license": "ISC",
+  "dependencies": {
+    "puppeteer": "^19.7.2"
+  }
+}
