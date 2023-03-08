@@ -2,13 +2,15 @@
   "name": "jswebscrap",
   "version": "1.0.0",
   "description": "test js web scrapping ",
-  "main": "index.js",
+  "main": "server.js",
+  "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "yanis legrand",
   "license": "ISC",
   "dependencies": {
+    "express": "^4.18.2",
     "puppeteer": "^19.7.2"
   }
 }
