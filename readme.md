@@ -1,6 +1,6 @@
 # JS Web scrapper for wp plugins changelogs
 
-    App use [puppeteer](https://pptr.dev) and [expressjs](https://expressjs.com/)
+App use [puppeteer](https://pptr.dev) and [expressjs](https://expressjs.com/)
 
 ## Start project
  
