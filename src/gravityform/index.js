@@ -1,7 +1,6 @@
 import puppeteer from "puppeteer";
 
 export default {
-
     async getGravityformChangelog() {
 
         const browser = await puppeteer.launch();
@@ -20,9 +19,7 @@ export default {
             return anchors.map(anchor => anchor.textContent).slice(0, 10)
         })
 
-        // console.log(stories)
         console.log('last data for ' + title + ' : ' + name);
-
 
         await page.tracing.stop()
         await browser.close();

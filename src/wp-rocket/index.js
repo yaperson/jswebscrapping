@@ -1,7 +1,6 @@
 import puppeteer from "puppeteer";
 
 export default {
-
     async getWPRocketChangelog() {
 
         const browser = await puppeteer.launch();
@@ -19,10 +18,8 @@ export default {
         const stories = await page.$$eval('h2', anchors => {
             return anchors.map(anchor => anchor.textContent).slice(0, 10)
         })
-
-        // console.log(stories)
+        
         console.log('last data for ' + title + ' : ' + name);
-
 
         await page.tracing.stop()
         await browser.close();

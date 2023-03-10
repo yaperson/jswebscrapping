@@ -18,6 +18,10 @@ app.listen(port, host, () => {
     console.log(`Server is runing on http://${host}:${port}`)
 })
 
+app.get('/', (req, res) => {
+    res.send("API puppeteer : <a href=\"http://localhost:8900/wp-rocket\">WP-Rocket</a> <a href=\"http://localhost:8900/gravityform\">Gravity form</a>")
+})
+
 app.get('/wp-rocket', async function (req, res) {
     await WpRocket.getWPRocketChangelog().then(results => {
         res.status(200);
