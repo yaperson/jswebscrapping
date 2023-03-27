@@ -42,16 +42,7 @@ const puppeteer = require('puppeteer');
         return { link, text }
     })
 
-    // const linkArray2 = await page.evaluate(
-    //     () => Array.from(
-    //       document.querySelectorAll('a[href]'),
-    //       a => a.getAttribute('href'), a.text()
-    //     )
-    //   );
-
-
     console.log(articles)
-    // console.log(linkArray)
     console.log('last data for ' + title + ' : ' + name);
 
     await page.tracing.stop()
