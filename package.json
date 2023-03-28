@@ -9,6 +9,7 @@
   "author": "yanis legrand",
   "license": "ISC",
   "dependencies": {
+    "fastify": "^4.15.0",
     "puppeteer": "^19.7.2"
   }
 }
