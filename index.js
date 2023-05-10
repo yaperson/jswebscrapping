@@ -1,10 +1,14 @@
-// Require the framework and instantiate it
-const fastify = require('fastify')({ logger: true })
-const scrap = require('./src/scrapping/scrap')
+import scrap from './src/scrapping/scrap.js'
+import Fastify from 'fastify'
+
+const fastify = Fastify({
+  logger: true
+})
+
 // Declare a route
 fastify.get('/', async (request, reply) => {
-  let data = scrap
-  return data
+  reply = await scrap.scrap
+  return reply
 })
 
 // Run the server!
